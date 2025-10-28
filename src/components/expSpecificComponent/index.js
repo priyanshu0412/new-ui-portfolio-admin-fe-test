@@ -26,7 +26,7 @@ const ExpSpecificComponent = () => {
     useEffect(() => {
         const fetchExp = async () => {
             try {
-                const res = await fetch(`http://localhost:8000/api/v1/exp/${id}`);
+                const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/exp/${id}`);
                 const data = await res.json();
                 setFormData({
                     ...data,

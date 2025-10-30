@@ -1,4 +1,4 @@
-import { PublicRoute, SpecificManageFooterComponent } from '@/components'
+import { ProtectedRoute, SpecificManageFooterComponent } from '@/components'
 import React from 'react'
 
 // --------------------------------------------------
@@ -6,9 +6,9 @@ import React from 'react'
 const SpecificManageFooterPage = () => {
     return (
         <>
-            <PublicRoute>
+            <ProtectedRoute>
                 <SpecificManageFooterComponent />
-            </PublicRoute>
+            </ProtectedRoute>
         </>
     )
 }
